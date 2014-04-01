@@ -20,6 +20,25 @@ class Board {
 	int cp;
 	Point[][] cl; 
 
+	
+//	public static void main(String args[]) throws Exception {
+//		Board test = new Board(5,5);
+//		System.out.println(test);
+//		test.makeMove(3);
+//		System.out.println(test);
+//		test.makeMove(4);
+//		System.out.println(test);
+//		test.makeMove(3);
+//		System.out.println(test);
+//		test.makeMove(4);
+//		System.out.println(test);
+//		test.makeMove(3);
+//		System.out.println(test);
+//		test.makeMove(4);
+//		System.out.println(test);
+//		test.makeMove(3);
+//		System.out.println(test);
+//	}
 
 	Board(int columns, int inrows)
 	{
@@ -108,10 +127,15 @@ class Board {
 
 	void makeMove(int column)
 	{
+		//Set point on the grid to relevant colour
 		grid[column][heights[column]].setState(cp);
+		//Increase height of relevant column
 		heights[column]++;
+		//Increment number of moves made
 		lm++;
+		//Record move made
 		moves[lm]=column;
+		//Change whose go it is
 		cp=-cp;
 	}
 
