@@ -32,6 +32,8 @@ public class runGame {
 			//Print the board to the terminal
 			System.out.println(b);
 			
+			//Arbitrary print statement to test git push
+			System.out.println();
 		}
 		
 

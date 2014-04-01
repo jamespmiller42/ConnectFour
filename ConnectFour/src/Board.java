@@ -1,3 +1,7 @@
+/*
+ * Board class contains all of the information about the game board
+ */
+
 class Board {
 
 	final static int PLAYER_ONE = 1;
