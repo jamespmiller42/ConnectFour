@@ -33,7 +33,7 @@ public class runGame {
 			System.out.println(b);
 			
 			//Arbitrary print statement to test git push
-			System.out.println();
+			System.out.println(); 
 		}
 		
 
