@@ -23,10 +23,11 @@ public class runGame {
 		//The game is done
 		while((b.winnerIs()==0) && b.validMovesLeft())
 		{
-			if(b.cp == b.PLAYER_ONE)
-				//Make player one's move
+			if(b.cp == b.PLAYER_ONE) {
+				//Prompt player 1 for move and make move
+				System.out.println("Player 1, enter a column number from 0-6 inclusive to drop your counter:");
 				b.makeMove(Integer.parseInt(move.readLine()));
-			else
+			}	else 
 				//Make player two's move
 				b.makeMove(p.getMove(b));
 			//Print the board to the terminal
