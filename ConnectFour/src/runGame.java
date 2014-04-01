@@ -31,8 +31,9 @@ public class runGame {
 				b.makeMove(p.getMove(b));
 			//Print the board to the terminal
 			System.out.println(b);
-
+			
 		}
+		
 
 	}
 }

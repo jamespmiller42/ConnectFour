@@ -40,7 +40,8 @@ class Board {
 	{
 		cl=new Point[69][4];
 		int count=0;
-		// horz segs
+		
+		// Finds and stores all possible horizontal 'fours'
 		for(int y=0;y<rows;y++)
 		{
 			for(int x=0;x<cols-3;x++)
@@ -54,7 +55,7 @@ class Board {
 
 		}
 
-		// vert segs
+		// Finds and stores all possible vertical 'fours'.
 		for(int x=0;x<cols;x++)
 		{
 			for(int y=0;y<rows-3;y++)
@@ -68,7 +69,7 @@ class Board {
 
 		}
 
-		// diag segs
+		// Finds and stores all possible diagonal 'fours'
 		for(int x=0;x<cols-3;x++)
 		{
 			for(int y=0;y<rows-3;y++)
@@ -81,6 +82,7 @@ class Board {
 			}
 
 		}
+		//And the diagonal fours in the other direction
 		for(int x=0;x<cols-3;x++)
 		{
 			for(int y=rows-1;y>rows-4;y--)
