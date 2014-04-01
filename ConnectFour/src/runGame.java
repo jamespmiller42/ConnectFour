@@ -19,6 +19,9 @@ public class runGame {
 		BufferedReader move = new BufferedReader(new 
 				InputStreamReader(System.in));
 
+		//Welcome Message
+		System.out.println("Welcome to ConnectFour!");
+			
 		//While loop uses winnerIs() and validMoves() functions from Board.java to determine whether
 		//The game is done
 		while((b.winnerIs()==0) && b.validMovesLeft())
@@ -33,9 +36,17 @@ public class runGame {
 			//Print the board to the terminal
 			System.out.println(b);
 			
-			//Arbitrary print statement to test git push
-			System.out.println(); 
 		}
+		
+
+		if(b.winnerIs() == 1) {
+			System.out.println("Player 1 WINS!");
+		} else if(b.winnerIs()==-1) {
+			System.out.println("Player 2 WINS!");
+		} else if(b.validMovesLeft() == false) {
+			System.out.println("No valid moves remaining!");
+		}
+	
 		
 
 	}
