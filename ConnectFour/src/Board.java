@@ -2,7 +2,7 @@
  * Board class contains all of the information about the game board
  */
 
-class Board {
+public class Board {
 
 	final static int PLAYER_ONE = 1;
 	final static int PLAYER_TWO = -1;

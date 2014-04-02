@@ -6,6 +6,8 @@
 
 import java.io.*;
 
+import javax.swing.JFrame;
+
 public class runGame {
 
 	public static void main(String args[]) throws Exception
@@ -13,6 +15,12 @@ public class runGame {
 		Board b; playerSearch p;
 		b=new Board(7,6);
 		p=new playerSearch();
+		
+		GUIFrame mygui = new GUIFrame();
+		GUIPanel myguipanel = new GUIPanel(b,p);
+		
+		mygui.add(myguipanel);
+		mygui.setVisible(true);
 		
 		//Creates a BufferedReader object so that the user can interact with the game.
 		BufferedReader move = new BufferedReader(new 
